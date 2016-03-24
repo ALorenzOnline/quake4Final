@@ -415,7 +415,7 @@ void rvStatManager::Kill( const idPlayer* victim, const idEntity* killer, int me
 	
 	if( killer && killer->IsType( idPlayer::GetClassType() ) ) {
 		rvStatKill* statKill = statAllocator.AllocStatKill( gameLocal.time, killer->entityNumber, victim->entityNumber, victim->IsGibbed(), methodOfDeath, &killBlock );
-		//aal if the killer is the hunted and scores a kill allow anothe spectating player to spawn.
+		//aal if the killer is the hunted and scores a kill allow another spectating player to spawn.
 		if(killer->team_num==0){
 			gameLocal.enemiesCanSpawn = gameLocal.enemiesCanSpawn + 1;\
 			gameLocal.Printf("enemies allowed");
@@ -424,6 +424,8 @@ void rvStatManager::Kill( const idPlayer* victim, const idEntity* killer, int me
 				idEntity *p = gameLocal.allowSpawn[i];//get the player;
 				
 				if(gameLocal.enemiesCanSpawn >=i+1){
+					gameLocal.Printf("%d", i+1);
+					gameLocal.Printf("players can play");
 					p->canSpawn==1;
 
 				}
@@ -477,12 +479,10 @@ void rvStatManager::WeaponHit( const idActor* attacker, const idEntity* victim, 
 		if( attacker->IsType( idPlayer::GetClassType()) ) {
 			// if attacker was a player, track hit and damage dealt
 			//aal if they are not on the same team
-			if(static_cast<const idPlayer*>( attacker )->team_num != static_cast<const idPlayer*>( victim )->team_num ){
 				int hitBlock;
 				rvStatHit* statHit = statAllocator.AllocStatHit( gameLocal.time, attacker->entityNumber, victim->entityNumber, weapon, countForAccuracy, &hitBlock );
-
 				statQueue.Append( rvPair<rvStat*, int>( (rvStat*)(statHit), hitBlock ) );
-			}
+			
 		}
 	}
 }

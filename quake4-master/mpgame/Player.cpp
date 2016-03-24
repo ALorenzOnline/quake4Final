@@ -9882,8 +9882,8 @@ void idPlayer::Killed( idEntity *inflictor, idEntity *attacker, int damage, cons
 							// Killed by self
 							float cashAward = (float) gameLocal.mpGame.mpBuyingManager.GetIntValueForKey( "playerCashAward_killingSelf", 0 );
 							killer->GiveCash( cashAward );
-							killer->team_num=0;
-							gameLocal.Printf("killer team num = 1");
+							//killer->team_num=0;
+							//gameLocal.Printf("killer team num = 1");
 						}
 						else if ( gameLocal.IsTeamGame() && killer->team == team ) {
 							// Killed by teammate
@@ -9893,10 +9893,10 @@ void idPlayer::Killed( idEntity *inflictor, idEntity *attacker, int damage, cons
 							// Killed by enemy
 							float cashAward = (float) gameLocal.mpGame.mpBuyingManager.GetOpponentKillCashAward();
 							killer->GiveCash( cashAward );
-							killer->team_num=0;
+							//killer->team_num=0;
 							
 							//aal set killer team num this works!
-							gameLocal.Printf("killer team num = 0");
+							//gameLocal.Printf("killer team num = 0");
 						}
 					}
 				}

@@ -1,0 +1,18 @@
+﻿Build started 3/24/2016 4:12:56 PM.
+     1>Project "C:\Users\Alex\Desktop\quake4Mod\quake4-master\idlib.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "../Win32/Release\idlib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       Lib:
+         All outputs are up-to-date.
+         idlib.vcxproj -> C:\Users\Alex\Desktop\quake4Mod\quake4-master\../Win32/Release\idlib.lib
+       FinalizeBuildStatus:
+         Deleting file "../Win32/Release\idlib.unsuccessfulbuild".
+         Touching "../Win32/Release\idlib.lastbuildstate".
+     1>Done Building Project "C:\Users\Alex\Desktop\quake4Mod\quake4-master\idlib.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.14

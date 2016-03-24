@@ -487,12 +487,20 @@ void rvGameState::NewState( mpGameState_t newState ) {
 					p->r3 = gameLocal.random.RandomInt(3);//damage boost
 
 					//aal set up teams for the poor sap mod
-					if(i==0){
-						p->team_num=0;	
-					}
-					if(i>0)
+					
+					if(i<=0)
 					{
+						p->team_num=0;
+						p->canSpawn=1;
+					}
+					if(i==1){
 						p->team_num=1;	
+						p->canSpawn=1;
+					}
+					if(i>1)
+					{
+						p->team_num=1;
+						p->canSpawn=0;
 					}
 					
 					GiveStuffToPlayer(p, "ammo", "");

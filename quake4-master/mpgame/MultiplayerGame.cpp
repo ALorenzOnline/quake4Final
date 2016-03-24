@@ -5906,7 +5906,7 @@ void idMultiplayerGame::CheckRespawns( idPlayer *spectator ) {
 		// no respawns in tourney mode, the tourney manager manually handles spawns
 		//aal if the p->team_num == 1 dont allow respawn
 		if ( ((WantRespawn( p ) || p == spectator) && p->canSpawn == 1)) {
-			p->we1=gameLocal.random.RandomInt(3);
+			//p->we1=gameLocal.random.RandomInt(3);
 
 			if ( gameState->GetMPGameState() == SUDDENDEATH && gameLocal.gameType != GAME_TOURNEY ) {gameLocal.enemiesCanSpawn=1;
 				// respawn rules while sudden death are different

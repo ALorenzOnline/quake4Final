@@ -1,0 +1,185 @@
+﻿Build started 3/24/2016 4:12:56 PM.
+     1>Project "C:\Users\Alex\Desktop\quake4Mod\quake4-master\mpgame.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "../Win32/Release\mpgame.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W4 /WX- /Ox /Ob1 /Oi /Oy- /D NDEBUG /D _WINDOWS /D _FINAL /D GAME_DLL /D GAME_MPAPI /D Q4SDK /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MT /GS- /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /GR /Yu /Fp"../Win32/Release\mpgame/mpgame.pch" /Fo"../Win32/Release\mpgame/" /Fd"../Win32/Release\mpgamex86.pdb" /Gd /TP /analyze- /errorReport:prompt mpgame\mp\GameState.cpp
+         GameState.cpp
+     1>mpgame\mp\GameState.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\Alex\Desktop\quake4Mod\quake4-master\../Win32/Release\mpgame.dll) does not match the Linker's OutputFile property value (C:\Users\Alex\Desktop\quake4Mod\Win32\Release\mpgamex86.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(mpgame) does not match the Linker's OutputFile property value (mpgamex86). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../Win32/Release\mpgamex86.dll" /INCREMENTAL:NO /NOLOGO ../Win32/Release\idLib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\mpgame\mpgame.def" /MANIFEST /ManifestFile:"../Win32/Release\mpgame.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"../Win32/Release\mpgamex86.pdb" /MAP:"../Win32/Release\mpgamex86.map" /MAPINFO:EXPORTS /STACK:"4194304" /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /TLBID:1 /BASE:"0x20000000" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /DLL ../Win32/Release\mpgame/Actor.obj
+         ../Win32/Release\mpgame/AF.obj
+         ../Win32/Release\mpgame/AFEntity.obj
+         ../Win32/Release\mpgame/BrittleFracture.obj
+         ../Win32/Release\mpgame/Camera.obj
+         ../Win32/Release\mpgame/Effect.obj
+         ../Win32/Release\mpgame/Entity.obj
+         ../Win32/Release\mpgame/Game_Debug.obj
+         ../Win32/Release\mpgame/Game_local.obj
+         ../Win32/Release\mpgame/Game_Log.obj
+         ../Win32/Release\mpgame/Game_network.obj
+         ../Win32/Release\mpgame/GameEdit.obj
+         ../Win32/Release\mpgame/Healing_Station.obj
+         ../Win32/Release\mpgame/Icon.obj
+         ../Win32/Release\mpgame/IconManager.obj
+         ../Win32/Release\mpgame/IK.obj
+         ../Win32/Release\mpgame/Instance.obj
+         ../Win32/Release\mpgame/Item.obj
+         ../Win32/Release\mpgame/Light.obj
+         ../Win32/Release\mpgame/LipSync.obj
+         ../Win32/Release\mpgame/Misc.obj
+         ../Win32/Release\mpgame/Moveable.obj
+         ../Win32/Release\mpgame/Mover.obj
+         ../Win32/Release\mpgame/MultiplayerGame.obj
+         ../Win32/Release\mpgame/Playback.obj
+         ../Win32/Release\mpgame/Player_Cheats.obj
+         ../Win32/Release\mpgame/Projectile.obj
+         ../Win32/Release\mpgame/Pvs.obj
+         ../Win32/Release\mpgame/SecurityCamera.obj
+         ../Win32/Release\mpgame/Sound.obj
+         ../Win32/Release\mpgame/SplineMover.obj
+         ../Win32/Release\mpgame/Target.obj
+         ../Win32/Release\mpgame/TramGate.obj
+         ../Win32/Release\mpgame/Trigger.obj
+         ../Win32/Release\mpgame/WorldSpawn.obj
+         ../Win32/Release\mpgame/Lagometer.obj
+         ../Win32/Release\mpgame/AAS.obj
+         ../Win32/Release\mpgame/AAS_debug.obj
+         ../Win32/Release\mpgame/AAS_Find.obj
+         ../Win32/Release\mpgame/AAS_pathing.obj
+         ../Win32/Release\mpgame/AAS_routing.obj
+         ../Win32/Release\mpgame/AAS_tactical.obj
+         ../Win32/Release\mpgame/AI.obj
+         ../Win32/Release\mpgame/AI_Actions.obj
+         ../Win32/Release\mpgame/AI_Announcements.obj
+         ../Win32/Release\mpgame/AI_Debug.obj
+         ../Win32/Release\mpgame/AI_events.obj
+         ../Win32/Release\mpgame/AI_Manager.obj
+         ../Win32/Release\mpgame/AI_Medic.obj
+         ../Win32/Release\mpgame/AI_Move.obj
+         ../Win32/Release\mpgame/AI_pathing.obj
+         ../Win32/Release\mpgame/AI_States.obj
+         ../Win32/Release\mpgame/AI_Tactical.obj
+         ../Win32/Release\mpgame/AI_Util.obj
+         ../Win32/Release\mpgame/Monster_Berserker.obj
+         ../Win32/Release\mpgame/Monster_BossBuddy.obj
+         ../Win32/Release\mpgame/Monster_BossMakron.obj
+         ../Win32/Release\mpgame/Monster_ConvoyGround.obj
+         ../Win32/Release\mpgame/Monster_ConvoyHover.obj
+         ../Win32/Release\mpgame/Monster_FailedTransfer.obj
+         ../Win32/Release\mpgame/Monster_Fatty.obj
+         ../Win32/Release\mpgame/Monster_Gladiator.obj
+         ../Win32/Release\mpgame/Monster_Grunt.obj
+         ../Win32/Release\mpgame/Monster_Gunner.obj
+         ../Win32/Release\mpgame/Monster_Harvester.obj
+         ../Win32/Release\mpgame/Monster_HarvesterDispersal.obj
+         ../Win32/Release\mpgame/Monster_HeavyHoverTank.obj
+         ../Win32/Release\mpgame/Monster_IronMaiden.obj
+         ../Win32/Release\mpgame/Monster_LightTank.obj
+         ../Win32/Release\mpgame/Monster_NetworkGuardian.obj
+         ../Win32/Release\mpgame/Monster_RepairBot.obj
+         ../Win32/Release\mpgame/Monster_Scientist.obj
+         ../Win32/Release\mpgame/Monster_Sentry.obj
+         ../Win32/Release\mpgame/Monster_SlimyTransfer.obj
+         ../Win32/Release\mpgame/Monster_StreamProtector.obj
+         ../Win32/Release\mpgame/Monster_StroggFlyer.obj
+         ../Win32/Release\mpgame/Monster_StroggHover.obj
+         ../Win32/Release\mpgame/Monster_StroggMarine.obj
+         ../Win32/Release\mpgame/Monster_TeleportDropper.obj
+         ../Win32/Release\mpgame/Monster_Turret.obj
+         ../Win32/Release\mpgame/Monster_TurretFlying.obj
+         ../Win32/Release\mpgame/spawner.obj
+         ../Win32/Release\mpgame/VehicleAI.obj
+         ../Win32/Release\mpgame/Anim.obj
+         ../Win32/Release\mpgame/Anim_Blend.obj
+         ../Win32/Release\mpgame/Anim_Import.obj
+         ../Win32/Release\mpgame/Anim_Testmodel.obj
+         ../Win32/Release\mpgame/ClientAFEntity.obj
+         ../Win32/Release\mpgame/ClientEffect.obj
+         ../Win32/Release\mpgame/ClientEntity.obj
+         ../Win32/Release\mpgame/ClientModel.obj
+         ../Win32/Release\mpgame/ClientMoveable.obj
+         ../Win32/Release\mpgame/Class.obj
+         ../Win32/Release\mpgame/DebugGraph.obj
+         ../Win32/Release\mpgame/Event.obj
+         ../Win32/Release\mpgame/SaveGame.obj
+         ../Win32/Release\mpgame/State.obj
+         ../Win32/Release\mpgame/SysCmds.obj
+         ../Win32/Release\mpgame/SysCvar.obj
+         ../Win32/Release\mpgame/Clip.obj
+         ../Win32/Release\mpgame/Force.obj
+         ../Win32/Release\mpgame/Force_Constant.obj
+         ../Win32/Release\mpgame/Force_Drag.obj
+         ../Win32/Release\mpgame/Force_Field.obj
+         ../Win32/Release\mpgame/Force_Spring.obj
+         ../Win32/Release\mpgame/Physics.obj
+         ../Win32/Release\mpgame/Physics_Actor.obj
+         ../Win32/Release\mpgame/Physics_AF.obj
+         ../Win32/Release\mpgame/Physics_Base.obj
+         ../Win32/Release\mpgame/Physics_Monster.obj
+         ../Win32/Release\mpgame/Physics_Parametric.obj
+         ../Win32/Release\mpgame/Physics_Particle.obj
+         ../Win32/Release\mpgame/Physics_Player.obj
+         ../Win32/Release\mpgame/Physics_RigidBody.obj
+         ../Win32/Release\mpgame/Physics_Static.obj
+         ../Win32/Release\mpgame/Physics_StaticMulti.obj
+         ../Win32/Release\mpgame/Physics_VehicleMonster.obj
+         ../Win32/Release\mpgame/Push.obj
+         ../Win32/Release\mpgame/Player.obj
+         ../Win32/Release\mpgame/Player_States.obj
+         ../Win32/Release\mpgame/PlayerView.obj
+         ../Win32/Release\mpgame/Script_Compiler.obj
+         ../Win32/Release\mpgame/Script_Interpreter.obj
+         ../Win32/Release\mpgame/Script_Program.obj
+         ../Win32/Release\mpgame/Script_Thread.obj
+         ../Win32/Release\mpgame/ScriptFuncUtility.obj
+         ../Win32/Release\mpgame/Vehicle.obj
+         ../Win32/Release\mpgame/Vehicle_DropPod.obj
+         ../Win32/Release\mpgame/Vehicle_Walker.obj
+         ../Win32/Release\mpgame/VehicleAnimated.obj
+         ../Win32/Release\mpgame/VehicleController.obj
+         ../Win32/Release\mpgame/VehicleDriver.obj
+         ../Win32/Release\mpgame/VehicleMonster.obj
+         ../Win32/Release\mpgame/VehicleParts.obj
+         ../Win32/Release\mpgame/VehiclePosition.obj
+         ../Win32/Release\mpgame/VehicleRigid.obj
+         ../Win32/Release\mpgame/VehicleSpline.obj
+         ../Win32/Release\mpgame/VehicleStatic.obj
+         ../Win32/Release\mpgame/Weapon.obj
+         ../Win32/Release\mpgame/WeaponBlaster.obj
+         ../Win32/Release\mpgame/WeaponDarkMatterGun.obj
+         ../Win32/Release\mpgame/WeaponGauntlet.obj
+         ../Win32/Release\mpgame/WeaponGrenadeLauncher.obj
+         ../Win32/Release\mpgame/WeaponHyperblaster.obj
+         ../Win32/Release\mpgame/WeaponLightningGun.obj
+         ../Win32/Release\mpgame/WeaponMachinegun.obj
+         ../Win32/Release\mpgame/WeaponNailgun.obj
+         ../Win32/Release\mpgame/WeaponNapalmGun.obj
+         ../Win32/Release\mpgame/WeaponRailgun.obj
+         ../Win32/Release\mpgame/WeaponRocketLauncher.obj
+         ../Win32/Release\mpgame/WeaponShotgun.obj
+         ../Win32/Release\mpgame/Buying.obj
+         ../Win32/Release\mpgame/CTF.obj
+         ../Win32/Release\mpgame/GameState.obj
+         ../Win32/Release\mpgame/Tourney.obj
+         ../Win32/Release\mpgame/VoiceComms.obj
+         ../Win32/Release\mpgame/StatEvent.obj
+         ../Win32/Release\mpgame/StatManager.obj
+         ../Win32/Release\mpgame/StatWindow.obj
+         C:\Users\Alex\Desktop\quake4Mod\Win32\Release\idlib.lib /MACHINE:I386 /fixed:no 
+            Creating library ../Win32/Release\mpgamex86.lib and object ../Win32/Release\mpgamex86.exp
+         mpgame.vcxproj -> C:\Users\Alex\Desktop\quake4Mod\quake4-master\../Win32/Release\mpgame.dll
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"../Win32/Release\mpgamex86.dll;#2" /manifest ../Win32/Release\mpgame.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "../Win32/Release\mpgame.unsuccessfulbuild".
+         Touching "../Win32/Release\mpgame.lastbuildstate".
+     1>Done Building Project "C:\Users\Alex\Desktop\quake4Mod\quake4-master\mpgame.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.39
